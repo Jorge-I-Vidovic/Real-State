@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Real State Business by Jorge I. Vidovic</title>
     <link rel="stylesheet" href="build/css/app.css">
 </head>
+
 <body>
     <header class="header inicio">
         <div class="contenedor contenido-header">
@@ -19,13 +21,71 @@
                     <a href="contacto.html">Contacto</a>
                 </nav>
             </div> <!-- Cierre class=Barra-->
-            <h2> Venta de casas y apartamentos exclusivos</h2>
+            <h1> Venta de casas y apartamentos exclusivos</h1>
         </div>
     </header>
 
     <main class="contenedor seccion">
-        <h1>Título página</h1>
+        <h2>Más sobre nosotros</h2>
+        <div class="iconos-nosotros">
+            <div class="icono">
+                <img src="build/img/icono1.svg" alt="Icono Seguridad" loading="lazy">
+                <h3>Seguridad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis laboriosam ipsam id fugit
+                    provident unde sint cum, saepe repudiandae, magnam, reiciendis eaque reprehenderit fugiat eos. Autem
+                    laboriosam eaque voluptas nihil?</p>
+            </div>
+            <div class="icono">
+                <img src="build/img/icono2.svg" alt="Icono Precio" loading="lazy">
+                <h3>Precio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis laboriosam ipsam id fugit
+                    provident unde sint cum, saepe repudiandae, magnam, reiciendis eaque reprehenderit fugiat eos. Autem
+                    laboriosam eaque voluptas nihil?</p>
+            </div>
+            <div class="icono">
+                <img src="build/img/icono3.svg" alt="Icono Tiempo" loading="lazy">
+                <h3>Tiempo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis laboriosam ipsam id fugit
+                    provident unde sint cum, saepe repudiandae, magnam, reiciendis eaque reprehenderit fugiat eos. Autem
+                    laboriosam eaque voluptas nihil?</p>
+            </div>
+        </div>
     </main>
+
+    <section class="seccion contenedor">
+        <h2>Casas y apartamentos en venta:</h2>
+        <div class="contenedor-anuncios">
+            <div class="anuncio">
+                <picture>
+                    <source srcset="build/img/anuncio1.webp" type="image/webp">
+                    <source srcset="build/img/anuncio1.jpg" type="image/jpeg">
+                    <img src="build/img/anuncio1.webp" alt="Anuncio_1" loading="lazy">
+                </picture>
+            </div>
+
+            <div class="contenido-anuncio">
+                <h3>Casa de lujo del lago</h3>
+                <p>Casa de lujo con vista al lago con acabado de lujo y excelente precio.</p>
+                <p class="precio">549.000,00€</p>
+                <ul class="iconos-caracteristicas">
+                    <li>
+                        <img src="build/img/icono_dormitorio.svg" alt="Icono_dormitorio" loading="lazy">
+                        <p>3</p>
+                    </li>
+
+                    <li>
+                        <img src="build/img/icono_wc.svg" alt="Icono_baños" loading="lazy">
+                        <p>3</p>
+                    </li>
+
+                    <li>
+                        <img src="build/img/icono_estacionamiento.svg" alt="icono_estacionamiento" loading="lazy">
+                        <p>3</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer seccion">
         <div class="contenedor contenido-footer">
@@ -41,4 +101,5 @@
 
     <script src="build/js/bundle.min.js"></script>
 </body>
+
 </html>
