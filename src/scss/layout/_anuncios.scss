@@ -16,29 +16,29 @@
     p {
         margin: 0;
     }
-
-    .precio{
-        color: $verde;
-        font-weight: bold;
-        font-size: 2.4rem;
-    }
 }
 
-.iconos-caracteristicas{
+.precio {
+    color: $verde;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+.iconos-caracteristicas {
     display: flex;
     list-style: none;
     padding: 0;
 
-    li{
+    li {
         flex: 1;
         display: flex;
 
-        img{
+        img {
             flex: 0 0 5rem;
             margin-right: 1rem;
         }
 
-        p{
+        p {
             font-weight: $black;
         }
     }
