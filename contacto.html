@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Real State Business by Jorge I. Vidovic</title>
     <link rel="stylesheet" href="build/css/app.css">
 </head>
+
 <body>
     <header class="header">
         <div class="contenedor contenido-header">
@@ -24,6 +26,56 @@
 
     <main class="contenedor seccion">
         <h1>Contacto</h1>
+        <picture>
+            <source srcset="build/img/destacada3.webp" type="image/webp">
+            <source srcset="build/img/destacada3.jpg" type="image/jpeg">
+            <img src="build/img/destacada3.webp" alt="Anuncio" loading="lazy">
+        </picture>
+        <h2>Llena formulario para contactar con nosotros:</h2>
+        <form class="formulario" action="">
+            <fieldset>
+                <legend>Información personal</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Tú nombre" id="nombre">
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Tú E-mail" id="email">
+                <label for="tlf">Teléfono</label>
+                <input type="tel" placeholder="Tú teléfono" id="tlf">
+                <label for="msj">Mensaje</label>
+                <textarea id="msj"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Información sobre la propiedad</legend>
+                <label for="opciones">Vende o compra:</label>
+                <select id="opciones">
+                    <option value="" disable selected>-- Seleccione --</option>
+                    <option value="compra">Compra</option>
+                    <option value="vende">Vende</option>
+                </select>
+                <label for="ppp">Precio o presupuesto</label>
+                <input type="number" placeholder="Tú precio o presupuesto" id="ppp">
+            </fieldset>
+
+            <fieldset>
+                <legend>Información sobre la propiedad</legend>
+                <p>Como desea ser contactado</p>
+                <div class="forma-contacto"> 
+                    <label for="contactar-telefono">Teléfono</label>
+                    <input name="contacto" type="radio" value="telefono" id="contactar-telefono">
+
+                    <label for="contactar-email">E-mail</label>
+                    <input name="contacto" type="radio" value="email" id="contactar-email">
+                </div>
+                <p>Si eligió teléfono, escoja la hora y la fecha para ser contactado:</p>
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora</label>
+                <input type="time" id="hora" min="9:00" max="18:00">
+            </fieldset>
+
+            <input type="submit" value="enviar" class="boton-verde">
+        </form>
     </main>
 
     <footer class="footer seccion">
@@ -40,4 +92,5 @@
 
     <script src="build/js/bundle.min.js"></script>
 </body>
+
 </html>
